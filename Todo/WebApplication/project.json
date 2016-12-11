@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-WebApplication-63dd2b3d-c893-4d4a-a2da-d4c693f52930",
 
   "dependencies": {
@@ -58,7 +58,13 @@
   },
 
   "frameworks": {
-    "net452": { }
+    "net452": {
+      "dependencies": {
+        "Todo": {
+          "target": "project"
+        }
+      }
+    }
   },
 
   "buildOptions": {

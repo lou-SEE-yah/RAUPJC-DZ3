@@ -2300,6 +2300,9 @@
         "runtime": {
           "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll": {}
         }
+      },
+      "Todo/1.0.0": {
+        "type": "project"
       }
     }
   },
@@ -5909,6 +5912,10 @@
         "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml"
       ]
+    },
+    "Todo/1.0.0": {
+      "type": "project",
+      "msbuildProject": "../Todo/Todo.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5938,7 +5945,9 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Tools >= 1.0.0-preview2-final",
       "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 1.0.0-preview2-final"
     ],
-    ".NETFramework,Version=v4.5.2": []
+    ".NETFramework,Version=v4.5.2": [
+      "Todo"
+    ]
   },
   "tools": {
     ".NETCoreApp,Version=v1.0": {

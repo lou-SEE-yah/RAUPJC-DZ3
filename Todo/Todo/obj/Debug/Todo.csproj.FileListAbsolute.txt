@@ -1,0 +1,10 @@
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\bin\Debug\Todo.dll.config
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\bin\Debug\Todo.dll
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\bin\Debug\Todo.pdb
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\bin\Debug\EntityFramework.dll
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\bin\Debug\EntityFramework.SqlServer.dll
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\bin\Debug\EntityFramework.xml
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\bin\Debug\EntityFramework.SqlServer.xml
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\obj\Debug\Todo.csprojResolveAssemblyReference.cache
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\obj\Debug\Todo.dll
+C:\PPI\c#\RAUPJC-DZ3\Todo\Todo\obj\Debug\Todo.pdb

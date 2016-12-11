@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Todo
 {
-    public class TodoDbContext : System.Data.Entity.DbContext    {
+    public class TodoDbContext : DbContext
+    {
         public IDbSet<TodoItem> TodoItem { get; set; }
 
         public TodoDbContext(string connectionString) : base(connectionString)
