@@ -17,6 +17,10 @@ namespace Todo
         public TodoAccessDeniedException(string message, Exception innerException) : base(message, innerException)
         {
         }
+        
+        public TodoAccessDeniedException(Guid userId, Guid todoId, Exception innerException = null) : base($"User with ID: {userId} tried to access {todoId} without permission.", innerException)
+        {
+        }
 
         protected TodoAccessDeniedException(SerializationInfo info, StreamingContext context) : base(info, context)
         {

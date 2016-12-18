@@ -5,6 +5,31 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+@model System.Collections.Generic.List<Todo.TodoItem>
 
-<p>Hello from our View Template!</p>
+
+<h1>Active Todos</h1>
+<div>
+    <a asp-action="Add">Add new todo <span class="glyphicon glyphicon-plus-sign"></span></a> &nbsp;
+    <a asp-action="Completed">See completed <span class="glyphicon glyphicon-briefcase"></span></a>
+</div>
+<hr />
+
+@foreach (var todo in Model)
+{
+    
+    <div>
+        <h4>@todo.Text</h4>
+        <div>@todo.DateCreated.ToString("D")</div>
+        @if (todo.IsCompleted)
+        {
+            <div>Date completed: @todo.DateCompleted.GetValueOrDefault().ToString("D")</div>
+        }
+        else
+        {
+            <div>
+                <a asp-action="MarkAsCompleted" asp-route-todoId="@todo.Id">Mark as completed <span class="glyphicon glyphicon-check"></span></a>
+            </div>
+        }
+    </div>
+}

@@ -14,6 +14,8 @@
 --version:1.0.0.0
 --informational-version:1.0.0
 --target-framework:.NETFramework,Version=v4.5.2
+--reference:C:\Users\Lucija\.nuget\packages\EntityFramework\6.0.0\lib\net45\EntityFramework.SqlServer.dll
+--reference:C:\Users\Lucija\.nuget\packages\EntityFramework\6.0.0\lib\net45\EntityFramework.dll
 --reference:C:\Users\Lucija\.nuget\packages\Microsoft.ApplicationInsights\2.1.0\lib\net45\Microsoft.ApplicationInsights.dll
 --reference:C:\Users\Lucija\.nuget\packages\Microsoft.ApplicationInsights.Agent.Intercept\1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll
 --reference:C:\Users\Lucija\.nuget\packages\Microsoft.ApplicationInsights.AspNetCore\1.0.0\lib\net451\Microsoft.ApplicationInsights.AspNetCore.dll
@@ -182,12 +184,12 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ComponentModel.DataAnnotations.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Security.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Configuration.dll
---reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ComponentModel.DataAnnotations.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Diagnostics.Tools.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Transactions.dll
@@ -207,7 +209,10 @@ C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Controllers\TodoController.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\ApplicationDbContext.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\00000000000000_CreateIdentitySchema.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
+C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\20161218165701_initial.cs
+C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\20161218165701_initial.Designer.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Models\AddTodoViewModel.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Models\ApplicationUser.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Models\AccountViewModels\ForgotPasswordViewModel.cs

@@ -19,12 +19,13 @@ namespace Todo
 
         public void Add(TodoItem todoItem)
         {
-            var exists = _context.TodoItem.Find(todoItem);
+            var exists = _context.TodoItem.Find(todoItem.Id);
             if (exists != null)
             {
                 throw new DuplicateTodoItemException("Duplicate id: {" + todoItem.Id + "}");
             }
             _context.TodoItem.Add(todoItem);
+            _context.SaveChanges();
         }
 
         public TodoItem Get(Guid todoId, Guid userId)
@@ -32,7 +33,7 @@ namespace Todo
             TodoItem item = _context.TodoItem.Where(s => s.Id.Equals(todoId)).FirstOrDefault();
             if (item != null && item.UserId != userId)
             {
-                throw new TodoAccessDeniedException("User is not the owner of the chosen todo item.");
+                throw new TodoAccessDeniedException(userId, todoId);
             }
             return item;
         }
@@ -71,9 +72,8 @@ namespace Todo
             {
                 if (item.UserId.Equals(userId))
                 {
-                    item.IsCompleted = true;
-                    Remove(item.Id, item.UserId);
-                    Add(item);
+                    item.MarkAsCompleted();
+                    _context.SaveChanges();
                     return true;
                 }
                 throw new TodoAccessDeniedException("Access denied.");
@@ -89,6 +89,7 @@ namespace Todo
                 if (item.UserId.Equals(userId))
                 {
                     _context.TodoItem.Remove(item);
+                    //_context.SaveChanges();
                     return true;
                 }
                 throw new TodoAccessDeniedException("Access denied.");
@@ -101,13 +102,15 @@ namespace Todo
             TodoItem item = _context.TodoItem.Find(todoItem.Id);
             if (item == null)
             {
-                Add(item);
+                Add(todoItem);
+                _context.SaveChanges();
                 return;
             }
             if (item.UserId.Equals(userId))
             {
                 Remove(item.Id, item.UserId);
-                Add(item);
+                Add(todoItem);
+                _context.SaveChanges();
                 return;
             }
             throw new TodoAccessDeniedException("Access denied.");

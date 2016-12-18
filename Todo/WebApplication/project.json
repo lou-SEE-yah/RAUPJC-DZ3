@@ -2,6 +2,7 @@
   "userSecretsId": "aspnet-WebApplication-63dd2b3d-c893-4d4a-a2da-d4c693f52930",
 
   "dependencies": {
+    "EntityFramework": "6.0.0",
     "Microsoft.ApplicationInsights.AspNetCore": "1.0.0",
     "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",

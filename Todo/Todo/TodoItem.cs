@@ -39,5 +39,14 @@ namespace Todo
             // entity framework needs this one
             // not for use :)
         }
+
+        public void MarkAsCompleted()
+        {
+            if (!IsCompleted)
+            {
+                IsCompleted = true;
+                DateCompleted = DateTime.Now;
+            }
+        }
     }
 }

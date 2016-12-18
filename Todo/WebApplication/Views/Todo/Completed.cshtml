@@ -1,0 +1,28 @@
+﻿@model System.Collections.Generic.List<Todo.TodoItem>
+
+<h1>Completed todos</h1>
+
+@if (!Model.Any())
+{
+    <h4>Nothing completed :(</h4>
+}
+
+@foreach (var todo in Model)
+{
+    <div>
+        <h4>@todo.Text</h4>
+        <div>@todo.DateCreated.ToString("D")</div>
+        @if (todo.IsCompleted)
+        {
+            <div>Date completed: @todo.DateCompleted.GetValueOrDefault().ToString("D")</div>
+        }
+        else
+        {
+            <div>
+                <a asp-action="MarkAsCompleted" asp-route-todoId="@todo.Id">Mark as completed <span class="glyphicon glyphicon-check"></span></a>
+            </div>
+        }
+    </div>
+}
+
+<a asp-action="Index">Back</a>
