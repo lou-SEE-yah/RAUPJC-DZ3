@@ -211,6 +211,10 @@ C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\00000000000000_CreateId
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\20161218165701_initial.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\20161218165701_initial.Designer.cs
+C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\20161220182232_Initial1.cs
+C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\20161220182232_Initial1.Designer.cs
+C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\20161220182543_Initial2.cs
+C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\20161220182543_Initial2.Designer.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Data\Migrations\ApplicationDbContextModelSnapshot.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Models\AddTodoViewModel.cs
 C:\PPI\c#\RAUPJC-DZ3\Todo\WebApplication\Models\ApplicationUser.cs
